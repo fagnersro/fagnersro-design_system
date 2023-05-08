@@ -12,9 +12,7 @@ import {
   WrapperTitleAction 
 } from "./styles"
 
-export interface ToastProps extends ComponentProps<typeof ToastContainer> {
-  as?: ElementType
-}
+export interface ToastProps extends ComponentProps<typeof ToastContainer> {}
 
 export function Toast(props: ToastProps) {
   const [open, setOpen] = useState(false);
@@ -48,7 +46,7 @@ export function Toast(props: ToastProps) {
       >
         Click to Toast
       </Button>
-        <ToastContainer open={open} onOpenChange={setOpen}>
+        <ToastContainer open={open} onOpenChange={setOpen} {...props}>
           <WrapperGeral>
             <WrapperTitleAction>
                 <Title>Agendamento realizado</Title>
