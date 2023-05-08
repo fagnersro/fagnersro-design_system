@@ -19,7 +19,7 @@ module.exports = {
 
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/fagnersr-ui_design-system/'
+      config.base = '/fagnersro-design_system/'
     }
 
     return config
