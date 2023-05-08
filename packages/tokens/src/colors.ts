@@ -19,4 +19,4 @@ export const colors = {
   test: '#FFF',
   blacktest: '#000',
   backtest: '#004',
-} as const
+}
