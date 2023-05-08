@@ -5,9 +5,13 @@
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=@fagnersro-ui/docs && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.25.1",
     "@vitejs/plugin-react": "^3.1.0",
     "turbo": "^1.8.8",
     "vite": "^4.2.1"
