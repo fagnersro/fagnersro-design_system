@@ -1,5 +1,11 @@
 # @fagnersro-ui/react
 
+## 1.1.2
+
+### Patch Changes
+
+- Fix toat components
+
 ## 1.1.1
 
 ### Patch Changes

@@ -12,7 +12,7 @@ import {
   WrapperTitleAction 
 } from "./styles"
 
-export interface ToastProps extends ComponentProps<typeof ToastContainer> {}
+export interface ToastProps extends ComponentProps<typeof ToastProvider> {}
 
 export function Toast(props: ToastProps) {
   const [open, setOpen] = useState(false);
