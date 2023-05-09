@@ -1,4 +1,4 @@
-import { ComponentProps, ElementType, useEffect, useRef, useState } from "react"
+import { ComponentProps, useEffect, useRef, useState } from "react"
 import { ToastProvider } from "@radix-ui/react-toast"
 import { X } from "phosphor-react";
 import { 
@@ -19,13 +19,13 @@ export function Toast(props: ToastProps) {
   const eventDateRef = useRef(new Date());
   const timerRef = useRef(0);
 
-  function oneWeekAway(date: string) {
+  function oneWeekAway(date: any) {
     const now = new Date(date);
     const inOneWeek = now.setDate(now.getDate());
     return new Date(inOneWeek);
   }
   
-  function prettyDate(date: Date) {
+  function prettyDate(date: any) {
     return new Intl.DateTimeFormat('pt-BR', { dateStyle: 'full', timeStyle: 'short' }).format(date);
   }
 
@@ -34,19 +34,19 @@ export function Toast(props: ToastProps) {
   }, []);
 
   return (
-    <ToastProvider swipeDirection="right">
+    <ToastProvider swipeDirection="right" {...props}>
       <Button size="large" onClick={() => {
         setOpen(false)
         window.clearTimeout(timerRef.current)
         timerRef.current = window.setTimeout(() => {
-          eventDateRef.current = oneWeekAway(String(new Date));
+          eventDateRef.current = oneWeekAway(new Date);
           setOpen(true);
         }, 100);
       }}
       >
         Click to Toast
       </Button>
-        <ToastContainer open={open} onOpenChange={setOpen} {...props}>
+        <ToastContainer open={open} onOpenChange={setOpen} >
           <WrapperGeral>
             <WrapperTitleAction>
                 <Title>Agendamento realizado</Title>
