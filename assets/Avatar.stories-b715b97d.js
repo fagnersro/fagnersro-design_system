@@ -1,0 +1,2 @@
+import{A as t}from"./index-89268092.js";import"./index-95af657b.js";import"./iframe-601a27da.js";import"./index-1dd8965d.js";import"./jsx-runtime-9949504e.js";const e={title:"Data display/Avatar",component:t,args:{src:"https://github.com/fagnersro.png",alt:"Fagner Henrique"},argTypes:{src:{control:{type:"text"}}}},p={},c={args:{src:void 0}},n=["Primary","WithFallback"];export{p as Primary,c as WithFallback,n as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories-b715b97d.js.map
