@@ -13,16 +13,10 @@ export default {
           css={{ display: 'flex', flexDirection: 'row', gap: '$2', padding: '$10', }}
         >
           {Story()}
-
         </Box>
       )
     },
   ],
-  argTypes: {
-    onClick: {
-      action: Button
-    },
-  },
 } as Meta<ToastProps>
 
 export const Primary: StoryObj<ToastProps> = {}

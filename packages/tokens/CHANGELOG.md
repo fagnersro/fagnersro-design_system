@@ -1,5 +1,11 @@
 # @fagnersro-ui/tokens
 
+## 2.1.0
+
+### Minor Changes
+
+- Toast component
+
 ## 2.0.3
 
 ### Patch Changes
