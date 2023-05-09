@@ -1,5 +1,11 @@
 # @fagnersro-ui/tokens
 
+## 2.0.3
+
+### Patch Changes
+
+- Fix export packages tokens
+
 ## 2.0.2
 
 ### Patch Changes
