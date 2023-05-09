@@ -52,7 +52,7 @@ export function Toast(props: ToastProps) {
                 <Title>Agendamento realizado</Title>
                 <Action asChild altText="Goto schedule to undo">
                   <Button size='small'>
-                    <X weight="bold" size={11}/>
+                    <X weight="bold" size={12}/>
                   </Button>
                 </Action>
             </WrapperTitleAction>
