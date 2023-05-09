@@ -1,5 +1,11 @@
 # @fagnersro-ui/react
 
+## 1.2.1
+
+### Patch Changes
+
+- Fix components
+
 ## 1.2.0
 
 ### Minor Changes
