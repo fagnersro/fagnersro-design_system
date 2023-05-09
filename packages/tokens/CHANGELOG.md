@@ -1,5 +1,11 @@
 # @fagnersro-ui/tokens
 
+## 2.0.2
+
+### Patch Changes
+
+- Create the Toast component
+
 ## 2.0.1
 
 ### Patch Changes
